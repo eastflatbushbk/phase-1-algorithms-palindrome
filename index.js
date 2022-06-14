@@ -1,9 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  if (word == word.split('').reverse().join('')) {
+    return true;
+}
+else {
+    return false;
+}
 }
 
 /* 
   Add your pseudocode here
+  -divide string into an array of substring 
+  -reverse the array if substring 
+  -concate all element of that array of substring into one string
+  -if the argument is equal to the concated new string return true
+  -else return false
 */
 
 /*
