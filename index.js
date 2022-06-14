@@ -1,6 +1,7 @@
 function isPalindrome(word) {
   // Write your algorithm here
-  if (word == word.split('').reverse().join('')) {
+  const str = word.toLowerCase()
+  if (str == str.split('').reverse().join('')) {
     return true;
 }
 else {
@@ -10,6 +11,7 @@ else {
 
 /* 
   Add your pseudocode here
+  -Convert the string to lowercase letters
   -divide string into an array of substring 
   -reverse the array if substring 
   -concate all element of that array of substring into one string
